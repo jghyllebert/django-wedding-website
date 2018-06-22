@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 Django settings for bigday project.
 
@@ -47,6 +48,7 @@ MIDDLEWARE_CLASSES = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
@@ -107,7 +109,12 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en'
+LANGUAGES = (
+    ('en', 'English'),
+    ('es', u'Español'),
+    ('nl', 'Nederlands'),
+)
 
 TIME_ZONE = 'UTC'
 
@@ -134,7 +141,8 @@ DEFAULT_WEDDING_REPLY_EMAIL = 'happilyeverafter@example.com'
 
 # when sending test emails it will use this address
 DEFAULT_WEDDING_TEST_EMAIL = DEFAULT_WEDDING_FROM_EMAIL
-WEDDING_CC_LIST = []  # put email addresses here if you want to cc someone on all your invitations
+# put email addresses here if you want to cc someone on all your invitations
+WEDDING_CC_LIST = []
 
 try:
     from .localsettings import *
