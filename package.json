@@ -1,0 +1,26 @@
+{
+  "name": "jonas-kim2019",
+  "version": "1.0.0",
+  "description": "Wedding website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jghyllebert/django-wedding-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jghyllebert/django-wedding-website/issues"
+  },
+  "homepage": "https://github.com/jghyllebert/django-wedding-website#readme",
+  "dependencies": {
+    "sass": "^1.7.1",
+    "waypoints": "^4.0.1"
+  },
+  "devDependencies": {
+    "sass-lint": "^1.12.1"
+  }
+}
