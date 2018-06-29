@@ -7,3 +7,7 @@ static_root
 _working/
 data/
 guests/static/save-the-date/images/archive/
+
+node_modules/
+.sass_cache/
+.npmrc
