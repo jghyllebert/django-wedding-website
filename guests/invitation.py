@@ -6,7 +6,7 @@ from django.core.mail import EmailMultiAlternatives
 from django.core.urlresolvers import reverse
 from django.http import Http404
 from django.template.loader import render_to_string
-from guests.models import Party, MEALS
+from guests.models import Party
 
 INVITATION_TEMPLATE = 'guests/email_templates/invitation.html'
 
@@ -32,7 +32,6 @@ def get_invitation_context(party):
         'preheader_text': "You are invited!",
         'invitation_id': party.invitation_id,
         'party': party,
-        'meals': MEALS,
     }
 
 
@@ -57,7 +56,8 @@ def send_invitation_email(party, test_only=False, recipients=None):
     msg.attach_alternative(template_html, "text/html")
     msg.mixed_subtype = 'related'
     for filename in (context['main_image'], ):
-        attachment_path = os.path.join(os.path.dirname(__file__), 'static', 'invitation', 'images', filename)
+        attachment_path = os.path.join(os.path.dirname(
+            __file__), 'static', 'invitation', 'images', filename)
         with open(attachment_path, "rb") as image_file:
             msg_img = MIMEImage(image_file.read())
             msg_img.add_header('Content-ID', '<{}>'.format(filename))
@@ -69,7 +69,8 @@ def send_invitation_email(party, test_only=False, recipients=None):
 
 
 def send_all_invitations(test_only, mark_as_sent):
-    to_send_to = Party.in_default_order().filter(is_invited=True, invitation_sent=None).exclude(is_attending=False)
+    to_send_to = Party.in_default_order().filter(
+        is_invited=True, invitation_sent=None).exclude(is_attending=False)
     for party in to_send_to:
         send_invitation_email(party, test_only=test_only)
         if mark_as_sent:
