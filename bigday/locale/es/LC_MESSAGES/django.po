@@ -4,7 +4,7 @@ msgstr "El gran dia de Kimberly y Jonas"
 
 #: bigday/templates/home.html:17
 msgid "Our story"
-msgstr ""
+msgstr "Nuestra Historia"
 
 #: bigday/templates/home.html:18
 msgid "Veracruz"
@@ -12,7 +12,7 @@ msgstr "Veracruz"
 
 #: bigday/templates/home.html:20
 msgid "Where to stay"
-msgstr ""
+msgstr "En dónde alojarse"
 
 #: bigday/templates/home.html:21
 msgid "Contact"
@@ -20,7 +20,7 @@ msgstr "Contacto"
 
 #: bigday/templates/home.html:31
 msgid "Scroll down"
-msgstr ""
+msgstr "Deslizar"
 
 #: bigday/templates/home.html:45
 msgid ""
@@ -39,11 +39,18 @@ msgid ""
 "              a city called Xalapa is the capital after the Spanish, French "
 "and Americans tried to occupy the city.</p>\n"
 "            "
-msgstr ""
+msgstr "<p>Localizada en el Golfo de México, donde la temperatura promedio en Junio es de 30 grados en la costa 
+.</p>\n""
+<p>Veracruz ha tenido un grán impacto en la historia, siendo la primera ciudad declarada en América tras la llegada de Hernán Cortez</p>\n"
+<p>El puerto de Veracruz es el más antiguo e importante de México desde la conquista de los Españoles. Veracruz importa y exporta automoviles de y hacia todo el mundo."</p>\n"
+<p>A pesar de haber una ciudad llamada Veracruz, esta no es la capital del estado de Veracruz.\n"
+
+"la ciudad de Xalapa se convirtió en la capital despues de que los Españoles, Franceses, y Norte Americanos trataran de ocupar la ciudad.</p>\n"\n"
+
 
 #: bigday/templates/home.html:64
 msgid "What to do in Veracruz?"
-msgstr ""
+msgstr "¿Que hacer en Veracruz?"
 
 #: bigday/templates/home.html:76
 msgid ""
