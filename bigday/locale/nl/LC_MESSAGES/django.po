@@ -1,0 +1,115 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-30 02:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: bigday/templates/base.html:12
+msgid "Kimberly and Jonas' big day"
+msgstr "Kimberly en Jonas trouwen!"
+
+#: bigday/templates/home.html:17
+msgid "Our story"
+msgstr ""
+
+#: bigday/templates/home.html:18
+msgid "Veracruz"
+msgstr "Veracruz"
+
+#: bigday/templates/home.html:20
+msgid "Where to stay"
+msgstr "Waar verblijven"
+
+#: bigday/templates/home.html:21
+msgid "Contact"
+msgstr "Contact"
+
+#: bigday/templates/home.html:31
+msgid "Scroll down"
+msgstr "Naar beneden scrollen"
+
+#: bigday/templates/home.html:45
+msgid ""
+"\n"
+"              <p>Located in the gulf of Mexico, where the average "
+"temperature for June is around 30 degrees in the coastal area.</p>\n"
+"              <p>It has had a huge impact on the history, with Hernán Cortés "
+"setting up the first Spanish town in\n"
+"                what we now call Mexico</p>\n"
+"              <p>The port of Veracruz is the oldest and still most important "
+"one for Mexico. It has been exporting since the Spaniards\n"
+"              arrived and currently it is the main port for shipping "
+"automobiles (both in and out).</p>\n"
+"              <p>Even though there is a city called Veracruz, it is not the "
+"capital of the state of Veracruz anymore.\n"
+"              a city called Xalapa is the capital after the Spanish, French "
+"and Americans tried to occupy the city.</p>\n"
+"            "
+msgstr ""
+
+#: bigday/templates/home.html:64
+msgid "What to do in Veracruz?"
+msgstr "Wat doen in Veracruz?"
+
+#: bigday/templates/home.html:76
+msgid ""
+"\n"
+"        <p>This Island hosts a fortress, prisoins and a former palace built "
+"by the Spanish in 1565</p>\n"
+"        <p>The fort overlooks the port of Veracruz and was the last site "
+"help by the Spaniards after Mexico's independence.<br>\n"
+"          Afterwards it was used as a sea defense to repel various attacks "
+"and it became an important symbol of Mexican resistance.</p>\n"
+"        <p>The place has been undergoing renovation, with the former prisons "
+"and fortresses open to the public.<br>\n"
+"           Only the former presidential palace is not open as it is still "
+"undergoing renovation.</p>\n"
+"        "
+msgstr ""
+
+#: bigday/templates/home.html:91
+msgid ""
+"\n"
+"        <p><i>El Malec&oacute;n</i> literally translates to the boardwalk. "
+"It starts in the city center from Veracruz and continues all the way to Boca "
+"del R&iacute;o 10 kilometers further.</p>\n"
+"        <p>You should definitely talk to Jonas for the best running spots. "
+"However, if running is not your thing, we recommend you to go to the start "
+"of <i>el Malec&oacute;n</i> and inmerse yourself in the small outdoor "
+"markets around</p>\n"
+"        <p>If you're in luck, you might see a ship enter the port of "
+"Veracruz. But, don't forget to take a look at the buildings around.<br>\n"
+"          One cannot miss the huge building on the corner, orignally it was "
+"the office for the Bank of Mexico, nowadays its owned by PEMEX (gas station "
+"company).<br>\n"
+"          Also worth a look is the former lighthouse (pictured) from 1902.</"
+"p>\n"
+"        "
+msgstr ""
+
+#: bigday/templates/home.html:107
+msgid "Where to stay?"
+msgstr "Waar verblijven"
+
+#: bigday/templates/home.html:118
+msgid ""
+"\n"
+"            <p>Ideally located outside the city center of Veracruz, the "
+"Fiesta Americana is one of the prestigious hotels in the area.</p>\n"
+"            <p>The hotel recently got featured in the final episodes of the "
+"Belgian show <i>De Mol</i> </p>\n"
+"          "
+msgstr ""
