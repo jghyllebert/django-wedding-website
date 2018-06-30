@@ -9,5 +9,5 @@ data/
 guests/static/save-the-date/images/archive/
 
 node_modules/
-.sass_cache/
+.sass-cache/
 .npmrc
