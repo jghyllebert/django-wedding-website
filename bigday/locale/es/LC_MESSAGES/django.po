@@ -43,7 +43,7 @@ msgstr "<p>Localizada en el Golfo de México, donde la temperatura promedio en J
 .</p>\n""
 <p>Veracruz ha tenido un grán impacto en la historia, siendo la primera ciudad declarada en América tras la llegada de Hernán Cortez</p>\n"
 <p>El puerto de Veracruz es el más antiguo e importante de México desde la conquista de los Españoles. Veracruz importa y exporta automoviles de y hacia todo el mundo."</p>\n"
-<p>A pesar de haber una ciudad llamada Veracruz, esta no es la capital del estado de Veracruz.\n"
+<p>A pesar de haber una ciudad llamada Veracruz, esta no es la capital del estado de Veracruz.</p>\n"
 
 "la ciudad de Xalapa se convirtió en la capital despues de que los Españoles, Franceses, y Norte Americanos trataran de ocupar la ciudad.</p>\n"\n"
 
