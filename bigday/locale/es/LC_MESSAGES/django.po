@@ -4,7 +4,7 @@ msgstr "El gran dia de Kimberly y Jonas"
 
 #: bigday/templates/home.html:17
 msgid "Our story"
-msgstr ""
+msgstr "Nuestra Historia"
 
 #: bigday/templates/home.html:18
 msgid "Veracruz"
@@ -12,7 +12,7 @@ msgstr "Veracruz"
 
 #: bigday/templates/home.html:20
 msgid "Where to stay"
-msgstr ""
+msgstr "En dónde alojarse"
 
 #: bigday/templates/home.html:21
 msgid "Contact"
@@ -20,7 +20,7 @@ msgstr "Contacto"
 
 #: bigday/templates/home.html:31
 msgid "Scroll down"
-msgstr ""
+msgstr "Deslizar"
 
 #: bigday/templates/home.html:45
 msgid ""
@@ -39,19 +39,25 @@ msgid ""
 "              a city called Xalapa is the capital after the Spanish, French "
 "and Americans tried to occupy the city.</p>\n"
 "            "
-msgstr ""
+msgstr "<p>Localizada en el Golfo de México, donde la temperatura promedio en Junio es de 30 grados en la costa 
+.</p>\n"
+"<p>Veracruz ha tenido un grán impacto en la historia, siendo la primera ciudad declarada en América tras la llegada de Hernán Cortez</p>\n"
+"<p>El puerto de Veracruz es el más antiguo e importante de México desde la conquista de los Españoles. Veracruz importa y exporta automoviles de y hacia todo el mundo.</p>\n"
+"<p>A pesar de haber una ciudad llamada Veracruz, esta no es la capital del estado de Veracruz.\n"
+"la ciudad de Xalapa se convirtió en la capital despues de que los Españoles, Franceses, y Norte Americanos trataran de ocupar la ciudad.</p>\n"
+
 
 #: bigday/templates/home.html:64
 msgid "What to do in Veracruz?"
-msgstr ""
+msgstr "¿Que hacer en Veracruz?"
 
 #: bigday/templates/home.html:76
 msgid ""
 "\n"
-"        <p>This Island hosts a fortress, prisoins and a former palace built "
+"        <p>This Island hosts a fortress, prisons and a former palace built "
 "by the Spanish in 1565</p>\n"
 "        <p>The fort overlooks the port of Veracruz and was the last site "
-"help by the Spaniards after Mexico's independence.<br>\n"
+"held by the Spaniards after Mexico's independence.<br>\n"
 "          Afterwards it was used as a sea defense to repel various attacks "
 "and it became an important symbol of Mexican resistance.</p>\n"
 "        <p>The place has been undergoing renovation, with the former prisons "
@@ -59,7 +65,16 @@ msgid ""
 "           Only the former presidential palace is not open as it is still "
 "undergoing renovation.</p>\n"
 "        "
-msgstr ""
+msgstr "<p> Esta isla alberga una fortaleza, prisiones y un antiguo palacio construido "
+"por los españoles en 1565 </ p> \ n"
+"<p> El fuerte domina el puerto de Veracruz y fue el último sitio"
+"en poder de los españoles después de la independencia de México. <br> \ n"
+"Luego fue utilizado como defensa para repeler varios ataques"
+"y se convirtió en un símbolo importante de la resistencia mexicana. </ p> \ n"
+"<p> El lugar ha estado en renovación, con las antiguas cárceles"
+"y fortalezas abiertas al público. <br> \ n"
+"Solo el antiguo palacio presidencial no está abierto, ya que todavía está"
+"en proceso de renovación". </ p> \ n"
 
 #: bigday/templates/home.html:91
 msgid ""
@@ -79,11 +94,23 @@ msgid ""
 "          Also worth a look is the former lighthouse (pictured) from 1902.</"
 "p>\n"
 "        "
-msgstr ""
+msgstr "<p> <i> El Malecón </ i>. "
+"Comienza en el centro de la ciudad desde Veracruz y continúa hasta Boca"
+"del Río 10 kilómetros despues. </ p> \ n"
+"<p> Puedes hablar con Jonas para obtener los mejores lugares para correr".
+"Sin embargo, si correr no es lo tuyo, te recomendamos que vayas al inicio"
+"de <i> el Malec & oacute; n </ i> y te des una vuelta por el mercadito nocturno.</ p> \ n"
+"<p> Si tienes suerte, podrás ver un barco entrar al puerto de"
+"Veracruz. Pero no olvide echar un vistazo a los edificios que hay alrededor. <br> \ n"
+"No puedes perderte el enorme edificio en la esquina, originalmente"
+"la oficina del Banco de México, actualmente es propiedad de PEMEX 
+". <br> \ n"
+"También vale la pena ver el antiguo faro (en la foto) de 1902. </"
+"p> \ n"
 
 #: bigday/templates/home.html:107
 msgid "Where to stay?"
-msgstr ""
+msgstr "En dónde alojarse?"
 
 #: bigday/templates/home.html:118
 msgid ""
@@ -93,4 +120,7 @@ msgid ""
 "            <p>The hotel recently got featured in the final episodes of the "
 "Belgian show <i>De Mol</i> </p>\n"
 "          "
-msgstr ""
+msgstr "<p> Idealmente ubicado fuera del centro de la ciudad de Veracruz, el "
+"Fiesta Americana es uno de los hoteles más prestigiosos de la zona. </ P> \ n"
+"<p> El hotel recientemente apareció en los episodios finales del"
+"Programa de televisión belga <i> De Mol </ i> </ p> \ n"
