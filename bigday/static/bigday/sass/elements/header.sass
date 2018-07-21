@@ -1,15 +1,35 @@
 $nav-height: 120px
 
-
 #top-menu
-  height: $nav-height
   align-items: baseline
 
   &.bg-transparent
     border-bottom: 3px none $gold
+    @include media-breakpoint-between(xs, sm)
+      background-color: #000 !important
 
   &.bg-black
     border-bottom: 3px solid $gold
+
+  .navbar-brand
+    display: none
+    @include media-breakpoint-between(xs, sm)
+      display: inline-block
+
+  .navbar-nav
+    .nav-link
+      width: 100px
+      text-align: center
+      @include media-breakpoint-between(xs, sm)
+        width: 100%
+        text-align: left
+      @include media-breakpoint-up(lg)
+        width: 150px
+
+    .logo
+      display: block
+      @include media-breakpoint-between(xs, sm)
+        display: none
 
   a
     height: 50px
@@ -22,3 +42,10 @@ $nav-height: 120px
 
     &:hover
       border-bottom: 1px solid $gold
+
+  .navbar-toggler
+    color: $gold
+    border: 1px solid $gold
+
+    span
+      color: $gold

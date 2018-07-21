@@ -1,163 +1,197 @@
 {% extends "base.html" %}
-{% load staticfiles %}
+{% load staticfiles i18n l10n %}
+{% get_current_language as LANGUAGE_CODE %}
 {% block page_head %}
     <!-- Custom CSS -->
-    <link href="{% static 'bigday/css/creative.css' %}" rel="stylesheet">
+    <link href="{% static 'bigday/css/styles.css' %}" rel="stylesheet">
+{% endblock %}
+{% block page_nav %}
+<nav id="top-menu" class="navbar navbar-expand-sm fixed-top bg-transparent">
+  <header class="navbar-brand" href="#">
+    <img class="logo" src="{% static 'bigday/images/logo-border.png' %}" alt="">
+  </header>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fal fa-bars"></i>
+  </button>
+
+  <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+    <div class="navbar-nav">
+      <a class="nav-link page-scroll" href="#our-story">{% trans "Our story" %}</a>
+      <a class="nav-link page-scroll" href="#veracruz">{% trans "Veracruz" %}</a>
+      <img class="logo" src="{% static "bigday/images/logo-border.png" %}" alt="">
+      <a class="nav-link page-scroll" href="#where-to-stay">{% trans "Where to stay" %}</a>
+      <a class="nav-link page-scroll" href="#contact">{% trans "Contact" %}</a>
+    </div>
+  </div>
+</nav>
 {% endblock %}
 {% block page_content %}
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Cory and Rowena's Big Day</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#main-header">Home</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#event">Event</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#niagara">Niagara-on-the-Lake</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#other-stuff">Everything Else</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+  <section id="opening" class="container-fluid">
+      <header>
+        <h1 class="center">Kimberly & Jonas</h1>
+      </header>
+      <div class="scroll-down">
+        <span>
+          <i class="fal fa-arrow-circle-down"></i><br>
+          {% trans "Scroll down" %}
+        </span>
+      </div>
+      <footer>
+        <h1 class="center">01/06/2019</h1>
+      </footer>
+  </section>
+  <section id="our-story" class="block">
+    <div class="parallax-container" data-parallax="scroll" data-image-src="{% static 'bigday/images/kim-jonas.jpg' %}" data-speed=0>
+    </div>
+    <h1 id="our-story--title">{% trans "Our Story" %}</h1>
+    <div id="our-story--story" class="story-2014 container-fluid">
+      <div class="row">
+        <div class="offset-md-1 col-md-6">
+          {% blocktrans %}
+            <p>Our history began 4 years ago, but not in the most traditional way.<br>
+            It all started with a trip that was supposed to be work related, with new adventures and experiences that became much more than that.</p>
+            <p>On June 6th, 2014, being in the same country, we decided to explore the possibility of meeting people from other places through an App. Who would say that we would end up meeting our future spouses?</p>
+            <p>We went from talking like people who had just met, to talking as friends, and a short time later, we developed a bond of love.
+              A bond that was not sustained by anything but messages, but that were strong enough to believe in our story.<br>One having to live in London and the other one in Miami, things got very complicated.</p>
+            <p>10 months after we met, we started to take things more seriously, and trips between Miami and London became more frequent.</p>
+          {% endblocktrans %}
         </div>
-        <!-- /.container-fluid -->
-    </nav>
-    {% block main %}
-    <header id="main-header">
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1>We did it!!</h1>
-                {% comment %}
-                <hr>
-                <h2>It's wedding week!</h2>
-                <a href="#welcome" class="btn btn-info btn-xl page-scroll">Welcome</a>
-                <a href="#event" class="btn btn-primary btn-xl page-scroll">Friday</a>
-                <a href="#saturday-event" class="btn btn-success btn-xl page-scroll">Saturday</a>
-                {% endcomment %}
-            </div>
+        <div class="col-md-4">
+          <img src="{% static 'bigday/images/story/kim_jonas_miami.jpg' %}" class="img-fluid">
         </div>
-    </header>
-    <section class="bg-info" id="welcome">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Welcome!</h2>
-                    <hr>
-                    <p>
-                        Hello friends and family! It's the week of the wedding!
-                    </p>
-                    <p>
-                        If you're looking for information about the event, look no further!
-                        Please see below for all the details regarding <a href="#event" class="page-scroll">Friday night's welcome party</a> and <a href="#saturday-event" class="page-scroll">Saturday's event</a>.
-                    </p>
-                    <p>
-                        To get added to the wedding whatsapp group first create an account and then send an
-                        email to <a href="mailto:{{ support_email }}">{{ support_email }}</a>.
-                        Also, the current front-runner for the wedding hashtag (if you're into that sort of thing) is #getlukky.
-                    </p>
-                    <p>
-                        Looking forward to seeing everyone soon!
-                    </p>
-                    <p class="pull-right">- Cory and Rowena</p>
-                </div>
-            </div>
+      </div>
+      <div class="row">
+        <div class="offset-md-1 col-md-4">
+          <img src="{% static 'bigday/images/story/wedding.jpg' %}" class="img-fluid">
         </div>
-    </section>
-    <section class="no-padding" id="navigation">
-        <div class="container-fluid">
-            <div class="row no-gutter">
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#event" class="portfolio-box page-scroll">
-                        <img src="{% static 'bigday/images/ravine-nav.jpg' %}" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-name">
-                                    The Event
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#niagara" class="portfolio-box page-scroll">
-                        <img src="{% static 'bigday/images/prince-of-wales-hotel-nav.jpg' %}" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-name">
-                                    Niagara-on-the-Lake
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#story" class="portfolio-box page-scroll">
-                        <img src="{% static 'bigday/images/twelve-apostles-nav.jpg' %}" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-name">
-                                    Our Story
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
+        <div class="col-md-6">
+          {% blocktrans  %}
+          <p>After two years of courtship, we came to the conclusion that we did not want to stay apart any longer, and that is when a new adventure began. We moved together to London, and lived between trips for another year and a half.</p>
+          <p>After living so many adventures together, we realized that we wanted to spend the rest of our lives together.</p>
+          <p>On December 1st, 2017 we got married in Belgium with a civil ceremony, later on, living even more adventures in our house in Mexico with our two dog daughters Bombon and Clarita.</p>
+          {% endblocktrans %}
         </div>
-    </section>
-    {% include 'partials/event.html' %}
-    <section id="niagara">
-        {% include 'partials/niagara.html' %}
-    </section>
-{% comment %}
-        {% include 'partials/wedding-party.html' %}
-{% endcomment %}
-    <section id="other-stuff" class="bg-primary">
-        {% include 'partials/misc.html' %}
-    </section>
-    <section id="gifts">
-        {% include 'partials/gifts.html' %}
-    </section>
-    <section id="story" class="bg-dark">
-        {% include 'partials/story.html' %}
-    </section>
-    {% include 'partials/proposal.html' %}
-    {% include 'partials/save-the-dates.html' %}
-    <section id="contact" class="bg-dark">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Contact us!</h2>
-                    <hr class="primary">
-                    <p>If you have any questions don't hesitate to reach out!</p>
-                </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:{{ support_email }}">{{ support_email }}</a></p>
-                </div>
-            </div>
+      </div>
+      <div class="row">
+        <p class="center" id="our-story--conclusion">{% trans "We want to seal our love in all possible ways, that's why, we want to have a Catholic wedding on June 1, 2019." %}</p>
+      </div>
+    </div>
+  </section>
+  <section id="veracruz" class="block">
+    <div class="parallax-container" data-parallax="scroll" data-image-src="{% static 'bigday/images/veracruz-original.jpg' %}" data-speed=0>
+    </div>
+    <h1 id="veracruz--title__hidden">Veracruz</h1>
+    <div class="container-fluid">
+      <div class="row" id="veracruz--intro">
+        <div class="col-md-6 offset-md-2 col-sm-12">
+            {% blocktrans %}
+              <p>Located in the gulf of Mexico, where the average temperature for June is around 30 degrees in the coastal area.</p>
+              <p>It has had a huge impact on the history, with Hernán Cortés setting up the first Spanish town in
+                what we now call Mexico</p>
+              <p>The port of Veracruz is the oldest and still most important one for Mexico. It has been exporting since the Spaniards
+              arrived and currently it is the main port for shipping automobiles (both in and out).</p>
+              <p>Even though there is a city called Veracruz, it is not the capital of the state of Veracruz anymore.
+              a city called Xalapa is the capital after the Spanish, French and Americans tried to occupy the city.</p>
+            {% endblocktrans %}
         </div>
-    </section>
-    {% endblock %}
+        <div class="col-md-4 col-sm-12">
+          <img src="{% static "bigday/images/veracruz-map.png" %}" class="image-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="veracruz--todo" class="container-fluid block">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="center">{% trans "What to do in Veracruz?" %}</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 offset-md-1">
+        <img src="{% static 'bigday/images/sanjuandeulua-original.jpg' %}" width="100%" alt="">
+      </div>
+      <div class="col-md-5">
+        <header>
+          <h1>San Juan De Ul&uacute;a</h1>
+          <span>History | Cultural</span>
+        </header>
+        {% blocktrans %}
+        <p>This Island hosts a fortress, prisons and a former palace built by the Spanish in 1565</p>
+        <p>The fort overlooks the port of Veracruz and was the last site held by the Spaniards after Mexico's independence.<br>
+          Afterwards it was used as a sea defense to repel various attacks and it became an important symbol of Mexican resistance.</p>
+        <p>The place has been undergoing renovation, with the former prisons and fortresses open to the public.<br>
+           Only the former presidential palace is not open as it is still undergoing renovation.</p>
+        {% endblocktrans %}
+      </div>
+    </div>
+    <div class="row" id="veracruz--todo-malecon">
+      <div class="col-md-5 offset-md-1">
+        <header>
+          <h1>Malec&oacute;n</h1>
+          <span>History | Sightseeing | Shopping | Sports</span>
+        </header>
+        {% blocktrans %}
+        <p><i>El Malec&oacute;n</i> literally translates to the boardwalk. It starts in the city center from Veracruz and continues all the way to Boca del R&iacute;o 10 kilometers further.</p>
+        <p>You should definitely talk to Jonas for the best running spots. However, if running is not your thing, we recommend you to go to the start of <i>el Malec&oacute;n</i> and inmerse yourself in the small outdoor markets around</p>
+        <p>If you're in luck, you might see a ship enter the port of Veracruz. But, don't forget to take a look at the buildings around.<br>
+          One cannot miss the huge building on the corner, orignally it was the office for the Bank of Mexico, nowadays its owned by PEMEX (gas station company).<br>
+          Also worth a look is the former lighthouse (pictured) from 1902.</p>
+        {% endblocktrans %}
+      </div>
+      <div class="col-md-4">
+        <img src="{% static 'bigday/images/faro-malecon.jpg' %}" width="100%" alt="">
+      </div>
+    </div>
+  </section>
+  <section id="where-to-stay" class="block">
+    <div class="parallax-container" data-parallax="scroll" data-image-src="{% static 'bigday/images/bule-boca.jpg' %}" data-speed=0>
+    </div>
+    <h1 id="where-to-stay--title__hidden">{% trans "Where to stay?" %}</h1>
+
+    <div id="where-to-stay--hotels" class="container-fluid">
+      <div class="row">
+        <div class="col-md-3 offset-md-1">
+          <script charset="utf-8" async src="//www.travelpayouts.com/chansey/iframe.js?hotel_id=360865&locale={{LANGUAGE_CODE}}&host=search.hotellook.com&marker=180237&currency=eur"></script>
+        </div>
+        <div class="col-md-8">
+          <header>
+            <h1>Fiesta Americana</h1>
+          </header>
+          {% blocktrans %}
+            <p>Ideally located outside the city center of Veracruz, the Fiesta Americana is one of the prestigious hotels in the area.</p>
+            <p>The hotel recently got featured in the final episodes of the Belgian show <i>De Mol</i> </p>
+          {% endblocktrans %}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <script charset="utf-8" async src="//www.travelpayouts.com/chansey/iframe.js?hotel_id=360862&locale={{ LANGUAGE_CODE }}&host=search.hotellook.com&marker=180237&currency=eur"></script>
+        </div>
+        <div class="col-md-3">
+          <script charset="utf-8" async src="//www.travelpayouts.com/chansey/iframe.js?hotel_id=360866&locale={{ LANGUAGE_CODE }}&host=search.hotellook.com&marker=180237.&currency=eur"></script>
+        </div>
+        <div class="col-md-3">
+          <script charset="utf-8" async src="//www.travelpayouts.com/chansey/iframe.js?hotel_id=1206134&locale={{ LANGUAGE_CODE }}&host=search.hotellook.com&marker=180237.&currency=eur"></script>
+        </div>
+        <div class="col-md-3">
+          <script charset="utf-8" async src="//www.travelpayouts.com/chansey/iframe.js?hotel_id=360877&locale={{ LANGUAGE_CODE}}&host=search.hotellook.com&marker=180237.&currency=eur"></script>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="block">
+    <div class="container-fluid">
+      <div class="row">
+        <h1 class="center">Contact</h1>
+
+      </div>
+      <div class="row">
+        <form class="" action="index.html" method="post">
+
+        </form>
+      </div>
+    </div>
+  </section>
 {% endblock %}
 {% block page_js %}
     <!-- Plugin JavaScript -->
@@ -166,5 +200,6 @@
     <!-- Automatically fit text based on screen size.-->
     <script src="{% static 'creative/js/jquery.fittext.js' %}"></script>
     <!-- Custom Theme JavaScript -->
+    <script src="{% static 'bigday/js/show-hide-titles.js' %}"></script>
     <script src="{% static 'creative/js/creative.js' %}"></script>
 {% endblock %}

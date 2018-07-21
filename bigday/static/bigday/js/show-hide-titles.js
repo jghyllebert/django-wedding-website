@@ -1,11 +1,9 @@
 // NAV transparent
 new Waypoint({
-  element: document.getElementById('veracruz'),
+  element: document.getElementById('our-story'),
   handler: function(direction) {
     $('#top-menu').toggleClass('bg-transparent')
-    $('#hamburger-menu').toggleClass('bg-transparent')
     $('#top-menu').toggleClass('bg-black')
-    $('#hamburger-menu').toggleClass('bg-black')
   },
   offset: 120
 })
@@ -13,9 +11,23 @@ new Waypoint({
 
 // SHOW/HIDE FIXED TITLES
 new Waypoint({
+  element: document.getElementById('our-story--story'),
+  handler: function(direction) {
+    $hidden = $('#our-story--title__hidden')
+    if($hidden.length > 0) {
+      $hidden.attr('id', 'our-story--title')
+      $('#veracruz--title').attr('id', 'veracruz--title__hidden')
+    } else {
+      $('#our-story--title').attr('id', 'our-story--title__hidden')
+      $('#veracruz--title__hidden').attr('id', 'veracruz--title')
+    }
+  },
+  offset: "40vw"
+})
+
+new Waypoint({
   element: document.getElementById('veracruz--intro'),
   handler: function(direction) {
-    console.log(direction);
     $hidden = $('#veracruz--title__hidden')
     if($hidden.length > 0) {
       $hidden.attr('id', 'veracruz--title')
@@ -29,13 +41,10 @@ new Waypoint({
 new Waypoint({
   element: document.getElementById('veracruz--todo-malecon'),
   handler: function(direction) {
-    console.log(direction);
     $hidden = $('#where-to-stay--title__hidden')
     if($hidden.length > 0) {
-      console.log('SHOW TITLE');
       $hidden.attr('id', 'where-to-stay--title')
     } else {
-      console.log('HIDE TITLE');
       $('#where-to-stay--title').attr('id', 'where-to-stay--title__hidden')
     }
   },

@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/jghyllebert/django-wedding-website#readme",
   "dependencies": {
+    "bootstrap": "^4.1.1",
+    "jquery": "^1.11.3",
+    "popper.js": "^1.14.3",
     "sass": "^1.7.1",
     "waypoints": "^4.0.1"
   },
