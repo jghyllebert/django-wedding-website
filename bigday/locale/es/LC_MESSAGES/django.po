@@ -1,33 +1,112 @@
-#: bigday/templates/base.html:12
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-21 20:36+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: bigday/templates/base.html:13
 msgid "Kimberly and Jonas' big day"
 msgstr "El gran dia de Kimberly y Jonas"
 
-#: bigday/templates/home.html:17
+#: bigday/templates/home.html:19
 msgid "Our story"
 msgstr "Nuestra Historia"
 
-#: bigday/templates/home.html:18
+#: bigday/templates/home.html:20
 msgid "Veracruz"
 msgstr "Veracruz"
 
-#: bigday/templates/home.html:20
+#: bigday/templates/home.html:22
 msgid "Where to stay"
 msgstr "En dónde alojarse"
 
-#: bigday/templates/home.html:21
+#: bigday/templates/home.html:23
 msgid "Contact"
 msgstr "Contacto"
 
-#: bigday/templates/home.html:31
+#: bigday/templates/home.html:36
 msgid "Scroll down"
 msgstr "Deslizar"
 
-#: bigday/templates/home.html:45
+#: bigday/templates/home.html:46
+msgid "Our Story"
+msgstr "Nuestra Historia"
+
+#: bigday/templates/home.html:50
+msgid ""
+"\n"
+"            <p>Our history began 4 years ago, but not in the most "
+"traditional way.<br>\n"
+"            It all started with a trip that was supposed to be work related, "
+"with new adventures and experiences that became much more than that.</p>\n"
+"            <p>On June 6th, 2014, being in the same country, we decided to "
+"explore the possibility of meeting people from other places through an App. "
+"Who would say that we would end up meeting our future spouses?</p>\n"
+"            <p>We went from talking like people who had just met, to talking "
+"as friends, and a short time later, we developed a bond of love.\n"
+"              A bond that was not sustained by anything but messages, but "
+"that were strong enough to believe in our story.<br>One having to live in "
+"London and the other one in Miami, things got very complicated.</p>\n"
+"            <p>10 months after we met, we started to take things more "
+"seriously, and trips between Miami and London became more frequent.</p>\n"
+"          "
+msgstr ""
+"\n"
+"<p>Nuestra historia comenzo hace 4 años, pero no de la forma más tradicional.<br>"
+"Todo empezó con un viaje que se suponía seria de trabajo, nuevas aventuras y experiencias que se convirtieron en mucho más que eso.</p>"
+"<p>El 6 de Junio del 2014, encontrándonos en el mismo País, decidimos explorar la posibilidad de conocer gente de otros lugares por una App. Quien diria que terminariamos conociendo a nuestros futuros esposos.</p>\n"
+"<p>Pasamos de hablar como gente que se acababa de conocer, a hablar como amigos, y poco tiempo después, desarrollamos un lazo de amor. Un lazo que no estaba sustentado por nada más que mensajes, pero que fueron lo suficientemente fuertes para creer en lo nuestro."
+"Uno teniendo que vivir en Londres y otro en Miami, hacían las cosas muy complicada.</p>\n"
+" "
+
+#: bigday/templates/home.html:68
+msgid ""
+"\n"
+"          <p>After two years of courtship, we came to the conclusion that we "
+"did not want to stay apart any longer, and that is when a new adventure "
+"began. We moved together to London, and lived between trips for another year "
+"and a half.</p>\n"
+"          <p>After living so many adventures together, we realized that we "
+"wanted to spend the rest of our lives together.</p>\n"
+"          <p>On December 1st, 2017 we got married in Belgium with a civil "
+"ceremony, later on, living even more adventures in our house in Mexico with "
+"our two dog daughters Bombon and Clarita.</p>\n"
+"          "
+msgstr ""
+"\n"
+"<p>10 meses después de conocernos, empezamos a tomar las cosas más en serio, y los viajes entre Miami y Londres se volvían cada vez más frecuentes.</p>"
+"</p>Después de dos años de noviazgo, llegamos a la conclusión de que no queríamos permanecer separados por más tiempo, y es cuando una nueva aventura comenzó. Nos mudamos juntos a Londres, y viviendo entre viajes por otro año y medio.</p>"
+"</p>Después de vivir tantas aventuras juntos, nos dimos cuenta que queriamos pasar el resto de nuestras vidas con el otro. El 1ro de diciembre del 2017 nos casamos en Bélgica por el civil, despues de eso viviendo aun mas aventuras en nuestra casa en México con nuestras dos hijas perrunas Bombon y Clarita.</p>\n"
+" "
+
+#: bigday/templates/home.html:76
+msgid ""
+"We want to seal our love in all possible ways, that's why, we want to have a "
+"Catholic wedding on June 1, 2019."
+msgstr ""
+"Queremos sellar nuestro amor en todas las formas posibles, por eso, queremos "
+"tener una boda religiosa catolica el 1ro de junio del 2019, para que Dios, "
+"también sea parte de nuestro nuevo matrimonio"
+
+#: bigday/templates/home.html:87
 msgid ""
 "\n"
 "              <p>Located in the gulf of Mexico, where the average "
 "temperature for June is around 30 degrees in the coastal area.</p>\n"
-"              <p>It has had a huge impact on the history, with Hernn Corts "
+"              <p>It has had a huge impact on the history, with Hernán Cortés "
 "setting up the first Spanish town in\n"
 "                what we now call Mexico</p>\n"
 "              <p>The port of Veracruz is the oldest and still most important "
@@ -39,19 +118,26 @@ msgid ""
 "              a city called Xalapa is the capital after the Spanish, French "
 "and Americans tried to occupy the city.</p>\n"
 "            "
-msgstr "<p>Localizada en el Golfo de México, donde la temperatura promedio en Junio es de 30 grados en la costa 
-.</p>\n"
-"<p>Veracruz ha tenido un grán impacto en la historia, siendo la primera ciudad declarada en América tras la llegada de Hernán Cortez</p>\n"
-"<p>El puerto de Veracruz es el más antiguo e importante de México desde la conquista de los Españoles. Veracruz importa y exporta automoviles de y hacia todo el mundo.</p>\n"
-"<p>A pesar de haber una ciudad llamada Veracruz, esta no es la capital del estado de Veracruz.\n"
-"la ciudad de Xalapa se convirtió en la capital despues de que los Españoles, Franceses, y Norte Americanos trataran de ocupar la ciudad.</p>\n"
+msgstr ""
+"\n"
+"<p>Localizada en el Golfo de México, donde la temperatura promedio en Junio "
+"es de 30 grados en la costa.</p>\n"
+"<p>Veracruz ha tenido un grán impacto en la historia, siendo la primera "
+"ciudad declarada en América tras la llegada de Hernán Cortez</p>\n"
+"<p>El puerto de Veracruz es el más antiguo e importante de México desde la "
+"conquista de los Españoles. Veracruz importa y exporta automoviles de y "
+"hacia todo el mundo.</p>\n"
+"<p>A pesar de haber una ciudad llamada Veracruz, esta no es la capital del "
+"estado de Veracruz.\n"
+"la ciudad de Xalapa se convirtió en la capital despues de que los Españoles, "
+"Franceses, y Norte Americanos trataran de ocupar la ciudad.</p>\n"
+"   "
 
-
-#: bigday/templates/home.html:64
+#: bigday/templates/home.html:106
 msgid "What to do in Veracruz?"
 msgstr "¿Que hacer en Veracruz?"
 
-#: bigday/templates/home.html:76
+#: bigday/templates/home.html:118
 msgid ""
 "\n"
 "        <p>This Island hosts a fortress, prisons and a former palace built "
@@ -65,18 +151,21 @@ msgid ""
 "           Only the former presidential palace is not open as it is still "
 "undergoing renovation.</p>\n"
 "        "
-msgstr "<p> Esta isla alberga una fortaleza, prisiones y un antiguo palacio construido "
-"por los españoles en 1565 </ p> \ n"
-"<p> El fuerte domina el puerto de Veracruz y fue el último sitio"
-"en poder de los españoles después de la independencia de México. <br> \ n"
-"Luego fue utilizado como defensa para repeler varios ataques"
-"y se convirtió en un símbolo importante de la resistencia mexicana. </ p> \ n"
-"<p> El lugar ha estado en renovación, con las antiguas cárceles"
-"y fortalezas abiertas al público. <br> \ n"
-"Solo el antiguo palacio presidencial no está abierto, ya que todavía está"
-"en proceso de renovación". </ p> \ n"
+msgstr ""
+"\n"
+"<p> Esta isla alberga una fortaleza, prisiones y un antiguo palacio "
+"construido por los españoles en 1565 </p>\n"
+"<p> El fuerte domina el puerto de Veracruz y fue el último sitioen poder de "
+"los españoles después de la independencia de México. <br>\n"
+"Luego fue utilizado como defensa para repeler varios ataquesy se convirtió "
+"en un símbolo importante de la resistencia mexicana. </p>\n"
+"<p> El lugar ha estado en renovación, con las antiguas cárcelesy fortalezas "
+"abiertas al público. <br>\n"
+"Solo el antiguo palacio presidencial no está abierto, ya que todavía estáen "
+"proceso de renovación. </p>\n"
+" "
 
-#: bigday/templates/home.html:91
+#: bigday/templates/home.html:133
 msgid ""
 "\n"
 "        <p><i>El Malec&oacute;n</i> literally translates to the boardwalk. "
@@ -94,25 +183,25 @@ msgid ""
 "          Also worth a look is the former lighthouse (pictured) from 1902.</"
 "p>\n"
 "        "
-msgstr "<p> <i> El Malecón </ i>. "
-"Comienza en el centro de la ciudad desde Veracruz y continúa hasta Boca"
-"del Río 10 kilómetros despues. </ p> \ n"
-"<p> Puedes hablar con Jonas para obtener los mejores lugares para correr".
-"Sin embargo, si correr no es lo tuyo, te recomendamos que vayas al inicio"
-"de <i> el Malec & oacute; n </ i> y te des una vuelta por el mercadito nocturno.</ p> \ n"
-"<p> Si tienes suerte, podrás ver un barco entrar al puerto de"
-"Veracruz. Pero no olvide echar un vistazo a los edificios que hay alrededor. <br> \ n"
-"No puedes perderte el enorme edificio en la esquina, originalmente"
-"la oficina del Banco de México, actualmente es propiedad de PEMEX 
-". <br> \ n"
-"También vale la pena ver el antiguo faro (en la foto) de 1902. </"
-"p> \ n"
+msgstr ""
+"\n"
+"<p> <i> El Malecón </i>. Comienza en el centro de la ciudad desde Veracruz y "
+"continúa hasta Bocadel Río 10 kilómetros despues. </p>\n"
+"<p> Puedes hablar con Jonas para obtener los mejores lugares para correr.Sin "
+"embargo, si correr no es lo tuyo, te recomendamos que vayas al iniciode <i> "
+"el Malec&oacute; n </i> y te des una vuelta por el mercadito nocturno.</p>\n"
+"<p> Si tienes suerte, podrás ver un barco entrar al puerto deVeracruz. Pero "
+"no olvide echar un vistazo a los edificios que hay alrededor. <br>\n"
+"No puedes perderte el enorme edificio en la esquina, originalmentela oficina "
+"del Banco de México, actualmente es propiedad de PEMEX. <br>\n"
+"También vale la pena ver el antiguo faro (en la foto) de 1902. </p>\n"
+" "
 
-#: bigday/templates/home.html:107
+#: bigday/templates/home.html:149
 msgid "Where to stay?"
-msgstr "En dónde alojarse?"
+msgstr "En d&oacute;nde alojarse?"
 
-#: bigday/templates/home.html:118
+#: bigday/templates/home.html:160
 msgid ""
 "\n"
 "            <p>Ideally located outside the city center of Veracruz, the "
@@ -120,7 +209,10 @@ msgid ""
 "            <p>The hotel recently got featured in the final episodes of the "
 "Belgian show <i>De Mol</i> </p>\n"
 "          "
-msgstr "<p> Idealmente ubicado fuera del centro de la ciudad de Veracruz, el "
-"Fiesta Americana es uno de los hoteles más prestigiosos de la zona. </ P> \ n"
-"<p> El hotel recientemente apareció en los episodios finales del"
-"Programa de televisión belga <i> De Mol </ i> </ p> \ n"
+msgstr ""
+"\n"
+"<p> Idealmente ubicado fuera del centro de la ciudad de Veracruz, el Fiesta "
+"Americana es uno de los hoteles más prestigiosos de la zona. </ P>\n"
+"<p> El hotel recientemente apareció en los episodios finales delPrograma de "
+"televisión belga <i> De Mol </i> </p>\n"
+"   "
