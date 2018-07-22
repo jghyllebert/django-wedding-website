@@ -1,0 +1,32 @@
+{% extends "guests/base.html" %}
+
+{% block page_content %}
+<div class="container" style="margin-top:80px">
+  <h1>Recommendations</h1>
+  <form method="post" class="form-inline">
+    <div class="form-group">
+      {% csrf_token %}
+      <input type="text" class="form-control" name="{{ form.name.html_name}}">
+      <button type="button" class="btn" name="button">Search</button>
+    </div>
+  </form>
+</div>
+{% if results %}
+<div class="container">
+  <div class="row">
+  {% for result in results  %}
+    {% include "foodies/partials/found_place.html" %}
+  {% endfor %}
+  </div>
+
+</div>
+{% endif %}
+{% endblock %}
+
+
+{% block page_js %}
+ <!-- TODO: when deploying, replace "development.js" with "production.min.js". -->
+<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+{% endblock %}
