@@ -20,14 +20,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'u7!-y4k1c6b44q507nr_l+c^12o7ur++cpzyn!$65w^!gum@h%'
-
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = []
-
+SECRET_KEY = os.environ['SECRET_KEY']
+GOOGLE_PLACES_API_KEY = os.getenv('GOOGLE_PLACES_API_KEY')
 
 # Application definition
 
@@ -39,6 +33,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'guests',
+    'foodies',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -75,18 +70,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'bigday.wsgi.application'
 
-
-# Database
-# https://docs.djangoproject.com/en/1.9/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
-
-
 # Password validation
 # https://docs.djangoproject.com/en/1.9/ref/settings/#auth-password-validators
 
@@ -116,12 +99,13 @@ LANGUAGES = (
     ('nl', 'Nederlands'),
 )
 
+LOCALE_PATHS = (
+    os.path.join(BASE_DIR, 'bigday', 'locale'),
+)
+
 TIME_ZONE = 'UTC'
-
 USE_I18N = True
-
 USE_L10N = True
-
 USE_TZ = True
 
 
@@ -132,6 +116,7 @@ STATIC_ROOT = 'static_root'
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join('bigday', 'static'),
+    os.path.join(BASE_DIR, 'node_modules'),
 )
 
 # the address your emails (save the dates/invites/etc.) will come from
